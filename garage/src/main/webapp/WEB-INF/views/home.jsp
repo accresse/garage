@@ -27,7 +27,7 @@ function pollDoorStatus(){
 }
 
 var updateStatusFields = function(data) {
-	var status = data.status;
+	var status = data;
 	var color = status=="OPEN"?"#cc0000":"#00cc00";
 	$('#currentStatus').text(status);
 	$('#currentStatus').css('color',color);

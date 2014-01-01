@@ -1,4 +1,6 @@
-package org.cresse.garage;
+package org.cresse.garage.service;
+
+import org.cresse.garage.vo.DoorStatus;
 
 import com.pi4j.io.gpio.GpioController;
 import com.pi4j.io.gpio.GpioFactory;
@@ -17,9 +19,8 @@ public class RaspberryPiGarageService implements GarageService {
 	}
 	
 	@Override
-	public Garage getGarage() {
-		DoorStatus status = mapStatus(doorSensor.getState());
-		return new Garage(status);
+	public DoorStatus getDoorStatus() {
+		return mapStatus(doorSensor.getState());
 	}
 
 	@Override

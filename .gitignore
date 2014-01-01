@@ -1,0 +1,16 @@
+
+garage/.project
+
+garage/.classpath
+
+garage/.springBeans
+
+garage/.settings
+
+.DS_Store
+
+*.prefs
+
+garage/src/main/resources/garage.properties
+
+garage/target

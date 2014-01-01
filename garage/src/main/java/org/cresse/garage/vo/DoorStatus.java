@@ -1,4 +1,4 @@
-package org.cresse.garage;
+package org.cresse.garage.vo;
 
 public enum DoorStatus {
 

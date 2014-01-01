@@ -2,6 +2,8 @@ package org.cresse.garage;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.cresse.garage.service.GarageService;
+import org.cresse.garage.vo.DoorStatus;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -29,8 +31,8 @@ public class GarageController {
 	
 	@RequestMapping(value = "/status", method = RequestMethod.GET)
 	@ResponseBody
-	public Garage status() {		
-		return garageService.getGarage();
+	public DoorStatus status() {		
+		return garageService.getDoorStatus();
 	}
 	
 	@RequestMapping(value = "/toggle", method = RequestMethod.GET)
